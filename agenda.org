@@ -1,0 +1,114 @@
+#+TITLE Agenda
+
+* 2024-1
+** Evaluaciones
+*** Analisis Funcional
+**** Calculo Nota
+#+BEGIN_SRC python
+nota_certamenes = [90, 0, 0]
+nota_tareas     = [96, 0, 0]
+
+nota_final      = 0.65 * (sum(nota_certamenes)/3) + 0.35 * (sum(nota_tareas)/3)
+return nota_final
+#+END_SRC
+
+#+RESULTS: : 30.7
+
+**** Certamenes
+***** DONE Certamen 1 Funcional <2024-04-10 Wed>
+***** TODO Certamen 2 Funcional <2024-05-29 Wed>
+- Clase 8 a Clase 16
+**** Tareas
+*** Estructuras Algebraicas
+**** Calculo Nota
+#+BEGIN_SRC python
+C1 = 100
+C2 = 0    #Aun no rendido
+T1 = 100
+T2 = 0    #Aun no rendido
+T3 = 0    #Aun no rendido
+
+return 0.3*C1 + 0.15*T1 + 0.3*C2 + 0.15*T2 + 0.1*T3
+#+END_SRC
+
+#+RESULTS:
+: 45.0
+
+**** Certamenes
+***** DONE Certamen 1 Estrcutura <2024-05-04 Sat>
+***** TODO Certamen 2 Estructura <2024-06-22 Wed>
+**** Tareas
+***** DONE Tarea 1 Estrcuturas <2024-06-04 Tue>
+***** TODO Tarea 2 Estructuras <2024-06-14 Fri>
+***** TODO Tarea 3 Estructuras <2024-07-05 Fri>
+*** Topologia
+**** Calculo de Nota
+#+BEGIN_SRC python
+notas_tareas = [100, 95, 0, 0, 0, 0, 0]
+return (sum(notas_tareas) - min(notas_tareas))/6
+#+END_SRC
+
+#+RESULTS:
+: 32.5
+
+**** Tareas
+***** TODO Tarea 5 Topologia <2024-06-05 Wed>
+- [[https://pmontero.mat.utfsm.cl/pdf_mat250/Tarea_5_MAT250.pdf]]
+- [[https://es.overleaf.com/project/66491117edc9ccfed5b06e06][LaTeX]]
+*** Analisis Numerico II
+**** Calculo de Nota
+#+BEGIN_SRC python
+notas_certamenes = [100, 0]
+notas_tareas     = [0, 0]
+
+prom_cert   = sum(notas_certamenes)/2
+prom_tareas = sum(notas_tareas)/2
+
+if(54 < prom_cert and 54 < prom_tareas):
+    return 0.6*prom_cert + 0.4*prom_tareas
+
+return min(0.6*prom_cert + 0.4*prom_tareas, 54)
+#+END_SRC
+
+#+RESULTS:
+: 30.0
+
+**** Certamenes
+***** DONE Certamen I Analisis Numerico II <2024-05-07 Tue>
+***** TODO Certamen II Analisis Numerico II <2024-07-09 Tue>
+**** Tareas
+***** TODO Tarea 1 Analisis Numerico II <2024-05-29 Wed>
+- [[~/Programming/tarea_numerico_ii/qne.ipynb]]
+*** Microeconomia
+**** Calculo de Nota
+#+BEGIN_SRC python
+notas_controles = [76, 29]
+notas_certamenes= [0, 0]
+
+return 0.3*(sum(notas_controles)/2) + 0.4*(sum(notas_certamenes)) - 0.1*min(notas_certamenes)
+#+END_SRC
+
+#+RESULTS:
+: 15.75
+
+**** Certamenes
+***** TODO Certamen 1 Microeconomia <2024-06-01 Sat>
+- Preferencias, funciones de utilidad
+- Maximizacion de la utilidad
+- Minimizacion del gasto, dualidad
+- Estatica comparativa, variaciones en el ingres, variaciones en el precio
+- Bienestar, excedente del consumidor, variacion compensatoria, variacion equivalente.
+
+***** TODO Certamen 2 Microeconomia <2024-06-28 Fri>
+***** TODO Certamen Global Microeconomia <2024-07-09 Tue>
+*** Teoria de Probabilidades y Procesos Estocasticos
+**** Calculo de Nota
+#+BEGIN_SRC python
+notas_controles  = [50, 35]
+notas_certamenes = [95]
+
+return 0.7*(sum(notas_certamenes)/2) + 0.3*(sum(notas_controles)/4)
+#+END_SRC
+
+#+RESULTS:
+: 39.625
