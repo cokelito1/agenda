@@ -19,31 +19,31 @@ return nota_final
 
 **** Certamenes
 ***** DONE Certamen 1 Funcional <2024-04-10 Wed>
-***** TODO Certamen 2 Funcional <2024-05-29 Wed>
+***** DONE Certamen 2 Funcional <2024-05-29 Wed>
 - Clase 8 a Clase 16
 **** Tareas
 *** Estructuras Algebraicas
 **** Calculo Nota
 #+BEGIN_SRC python
 C1 = 100
-C2 = 100    #Aun no rendido
+C2 = 100
 T1 = 100
 T2 = 100
-T3 = 0    #Aun no rendido
+T3 = 100
 
 return 0.3*C1 + 0.15*T1 + 0.3*C2 + 0.15*T2 + 0.1*T3
 #+END_SRC
 
 #+RESULTS:
-: 90.0
+: 100.0
 
 **** Certamenes
 ***** DONE Certamen 1 Estrcutura <2024-05-04 Sat>
-***** TODO Certamen 2 Estructura <2024-06-22 Wed>
+***** DONE Certamen 2 Estructura <2024-06-22 Wed>
 **** Tareas
 ***** DONE Tarea 1 Estrcuturas <2024-06-04 Tue>
-***** TODO Tarea 2 Estructuras <2024-06-14 Fri>
-***** TODO Tarea 3 Estructuras <2024-07-05 Fri>
+***** DONE Tarea 2 Estructuras <2024-06-14 Fri>
+***** DONE Tarea 3 Estructuras <2024-07-05 Fri>
 *** Topologia
 **** Calculo de Nota
 #+BEGIN_SRC python
@@ -61,8 +61,8 @@ return (sum(notas_tareas) - min(notas_tareas))/6
 *** Analisis Numerico II
 **** Calculo de Nota
 #+BEGIN_SRC python
-notas_certamenes = [100, 10]
-notas_tareas     = [65, 45]
+notas_certamenes = [100, 60]
+notas_tareas     = [65, 0]
 
 prom_cert   = sum(notas_certamenes)/2
 prom_tareas = sum(notas_tareas)/2
@@ -74,22 +74,19 @@ return min(0.6*prom_cert + 0.4*prom_tareas, 54)
 #+END_SRC
 
 #+RESULTS:
-: 55.0
+: 54
 
 **** Certamenes
 ***** DONE Certamen I Analisis Numerico II <2024-05-07 Tue>
-***** TODO Certamen II Analisis Numerico II <2024-07-09 Tue>
+***** DONE Certamen II Analisis Numerico II <2024-07-09 Tue>
 **** Tareas
-***** TODO Tarea 1 Analisis Numerico II <2024-05-29 Wed>
+***** DONE Tarea 1 Analisis Numerico II <2024-05-29 Wed>
 - [[~/Programming/tarea_numerico_ii/qne.ipynb]]
 *** Teoria de Probabilidades y Procesos Estocasticos
 **** Calculo de Nota
 #+BEGIN_SRC python
 notas_controles  = [50, 35, 72, 90]
-notas_certamenes = [95, 0]
+notas_certamenes = [95, 55]
 
-return 0.7*(sum(notas_certamenes)/2) + 0.3*(sum(notas_controles)/4)
+return 0.7*(sum(notas_certamenes)/2) + 0.3*((sum(notas_controles) - min(notas_controles))/3)
 #+END_SRC
-
-#+RESULTS:
-: 51.775
